@@ -6,43 +6,12 @@ Featuring an interactive 3D landing canvas, GSAP-driven transitions, and a conve
 
 ---
 
-## 🖼️ Application Gallery & Walkthrough
+## 🌐 Live Production Link
 
-Here is a visual tour of the platform features:
-
-### 1. Futuristic 3D WebGL Landing & Authentication Portal
-A high-performance particle system built using Three.js renders floating, interactive nodes behind an elegant glassmorphic authentication module.
-![3D WebGL Landing Screen](screenshots/login.png)
-
-### 2. Executive Analytics Dashboard & AI Insights
-Features responsive glowing gradient charts representing net cash flow alongside an on-the-fly generated AI monthly summary with spending analysis.
-![Executive Analytics Dashboard](screenshots/dashboard.png)
-
-### 3. Dynamic Category Analysis & Quick Ledger Entry
-Includes dynamic categorization donut charts and instant transaction logging fields.
-![Category Analysis](screenshots/quick_entry_and_charts.png)
-
-### 4. Live Ledger Activity logs
-Displays the list of recent transactions with visual badge tags and pagination.
-![Recent Activity](screenshots/recent_activity.png)
-
-### 5. Detailed Financial Ledger & CSV/OCR Tools
-Full ledger controls featuring sorting, filtering, one-click CSV table exports, and an AI OCR preset receipt analyzer.
-![Financial Ledger](screenshots/financial_ledger.png)
-### 6. Conversational AI Assistant Copilot
-An integrated floating chatbot widget capable of parsing natural language prompts and querying direct relational database histories to calculate spending distributions on demand.
-![AI Copilot Chatbot](screenshots/ai_chatbot.png)
-
-### 7. Interactive Category Budgets & Alert Meters
-Includes customized limits per category, displaying dynamic, reactive status bars changing from **Teal** to **Yellow** to **Red** as transactions approach limits.
-![Budget Allocations & Alerts](screenshots/budget_allocations.png)
-
-### 8. Role-Based Admin Management Console
-A restricted console for administrators to supervise all registered user statistics, elevate/demote accounts, and execute secure database cascading purges.
-![Admin Panel](screenshots/admin_panel.png)
+The application is deployed and available online:
+👉 **[https://edge-fleet-ai-4yv8.vercel.app/](https://edge-fleet-ai-4yv8.vercel.app/)**
 
 ---
-
 
 ## 🚀 Key Features
 
@@ -63,7 +32,6 @@ A restricted console for administrators to supervise all registered user statist
 * **Backend**: Node.js, Express, TypeScript, Prisma ORM, Helmet Security, Express Rate Limiter, Morgan logger.
 * **Database**: SQLite (local dev database).
 * **AI Provider**: Groq LPU API (`llama-3.3-70b-versatile`, primary) with Google Gemini API (`gemini-2.5-flash`, secondary) and a local rule-based smart engine (tertiary) fallback if API keys are absent.
-
 
 ---
 
@@ -199,3 +167,40 @@ All routes are mounted under `/api` and require an `Authorization: Bearer <jwt_t
 | **POST** | `/api/ai/chat` | Protected | Submits prompts and conversation histories to the AI Assistant. |
 | **POST** | `/api/ai/categorize` | Protected | Analyzes a transaction description to auto-suggest its category. |
 
+---
+
+## 🖼️ Application Gallery & Walkthrough
+
+Here is a visual tour of the platform features:
+
+### 1. Futuristic 3D WebGL Landing & Authentication Portal
+A high-performance particle system built using Three.js renders floating, interactive nodes behind an elegant glassmorphic authentication module.
+![3D WebGL Landing Screen](screenshots/login.png)
+
+### 2. Executive Analytics Dashboard & AI Insights
+Features responsive glowing gradient charts representing net cash flow alongside an on-the-fly generated AI monthly summary with spending analysis.
+![Executive Analytics Dashboard](screenshots/dashboard.png)
+
+### 3. Dynamic Category Analysis & Quick Ledger Entry
+Includes dynamic categorization donut charts and instant transaction logging fields.
+![Category Analysis](screenshots/quick_entry_and_charts.png)
+
+### 4. Live Ledger Activity logs
+Displays the list of recent transactions with visual badge tags and pagination.
+![Recent Activity](screenshots/recent_activity.png)
+
+### 5. Detailed Financial Ledger & CSV/OCR Tools
+Full ledger controls featuring sorting, filtering, one-click CSV table exports, and an AI OCR preset receipt analyzer.
+![Financial Ledger](screenshots/financial_ledger.png)
+
+### 6. Conversational AI Assistant Copilot
+An integrated floating chatbot widget capable of parsing natural language prompts and querying direct relational database histories to calculate spending distributions on demand.
+![AI Copilot Chatbot](screenshots/ai_chatbot.png)
+
+### 7. Interactive Category Budgets & Alert Meters
+Includes customized limits per category, displaying dynamic, reactive status bars changing from **Teal** to **Yellow** to **Red** as transactions approach limits.
+![Budget Allocations & Alerts](screenshots/budget_allocations.png)
+
+### 8. Role-Based Admin Management Console
+A restricted console for administrators to supervise all registered user statistics, elevate/demote accounts, and execute secure database cascading purges.
+![Admin Panel](screenshots/admin_panel.png)
