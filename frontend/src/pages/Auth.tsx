@@ -99,7 +99,7 @@ export const Auth: React.FC = () => {
     setError('');
     setLoading(true);
 
-    const url = isLogin ? '/api/auth/login' : '/api/auth/register';
+    const url = isLogin ? '/_/backend/api/auth/login' : '/_/backend/api/auth/register';
     const payload = isLogin 
       ? { email: normalizedEmail, password } 
       : { name, email: normalizedEmail, password };

@@ -14,7 +14,8 @@ export const useApi = () => {
     }
 
     try {
-      const response = await fetch(url, {
+      const targetUrl = url.startsWith('/api') ? `/_/backend${url}` : url;
+      const response = await fetch(targetUrl, {
         ...options,
         headers,
       });

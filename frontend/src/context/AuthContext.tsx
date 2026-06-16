@@ -29,7 +29,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         return;
       }
       try {
-        const response = await fetch('/api/auth/me', {
+        const response = await fetch('/_/backend/api/auth/me', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
