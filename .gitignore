@@ -32,3 +32,7 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Interview Prep Files
+Interview_Preparation_Guide.txt
+
